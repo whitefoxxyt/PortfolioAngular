@@ -1,0 +1,15 @@
+// ============================================================
+// Global Styles Entry Point
+// ============================================================
+
+// 1. Design tokens (must come first — @use rules before everything)
+@use 'styles/tokens/tokens';
+
+// 2. Reset
+@use 'styles/base/reset';
+
+// 3. Utility mixins
+@use 'styles/utils/mixins';
+
+// 4. Google Fonts — Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');

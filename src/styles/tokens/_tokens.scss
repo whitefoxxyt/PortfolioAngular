@@ -1,0 +1,91 @@
+// ============================================================
+// Design Tokens — Portfolio Angular
+// ============================================================
+// Edit this file to update the visual language of the portfolio.
+// All values are exposed as CSS custom properties consumed
+// by atoms, molecules, and organisms via var(--token-name).
+// ============================================================
+
+:root {
+  // --- Colors: Dark theme (default) ---
+  --color-bg:             #0a0a0f;
+  --color-surface:        #12121a;
+  --color-surface-raised: #1a1a26;
+  --color-text:           #f0f0f5;
+  --color-text-muted:     #8b8ba0;
+  --color-accent:         #7c3aed;
+  --color-accent-hover:   #6d28d9;
+  --color-border:         rgba(255, 255, 255, 0.08);
+
+  // --- Spacing scale (8px base) ---
+  --spacing-xs:   0.25rem;  //  4px
+  --spacing-sm:   0.5rem;   //  8px
+  --spacing-md:   1rem;     // 16px
+  --spacing-lg:   1.5rem;   // 24px
+  --spacing-xl:   2.5rem;   // 40px
+  --spacing-2xl:  4rem;     // 64px
+  --spacing-3xl:  6rem;     // 96px
+
+  // --- Typography ---
+  --font-sans:          'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:          'JetBrains Mono', 'Fira Code', monospace;
+  --font-size-xs:       0.75rem;   // 12px
+  --font-size-sm:       0.875rem;  // 14px
+  --font-size-base:     1rem;      // 16px
+  --font-size-lg:       1.125rem;  // 18px
+  --font-size-xl:       1.25rem;   // 20px
+  --font-size-2xl:      1.5rem;    // 24px
+  --font-size-3xl:      1.875rem;  // 30px
+  --font-size-4xl:      2.25rem;   // 36px
+  --font-size-5xl:      3rem;      // 48px
+  --font-size-6xl:      3.75rem;   // 60px
+  --line-height-base:   1.6;
+  --line-height-tight:  1.2;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:   700;
+
+  // --- Border radius ---
+  --radius-sm:   0.25rem;   //  4px
+  --radius-md:   0.5rem;    //  8px
+  --radius-lg:   0.75rem;   // 12px
+  --radius-xl:   1rem;      // 16px
+  --radius-full: 9999px;
+
+  // --- Transitions ---
+  --transition-fast:    150ms ease;
+  --transition-base:    250ms ease;
+  --transition-slow:    400ms ease;
+  --transition-theme:   300ms ease;
+
+  // --- Z-index scale ---
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+
+  // --- Shadows ---
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-accent: 0 0 32px rgba(124, 58, 237, 0.25);
+}
+
+// --- Colors: Light theme override ---
+[data-theme="light"] {
+  --color-bg:             #ffffff;
+  --color-surface:        #f5f5fa;
+  --color-surface-raised: #ebebf5;
+  --color-text:           #0f0f1a;
+  --color-text-muted:     #5a5a78;
+  --color-accent:         #7c3aed;
+  --color-accent-hover:   #6d28d9;
+  --color-border:         rgba(0, 0, 0, 0.1);
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.16);
+}
